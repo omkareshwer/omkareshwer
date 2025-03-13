@@ -6,14 +6,44 @@ body {
     background-color: #f8f1e4;
 }
 
-header {
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #6b4226;
-    color: white;
-    padding: 20px;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
     font-size: 24px;
+    color: white;
+    font-weight: bold;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
 }
 
 .hero {
+    margin-top: 80px;
     position: relative;
     text-align: center;
     color: white;
@@ -36,10 +66,7 @@ header {
     border-radius: 10px;
 }
 
-.gallery {
-    padding: 20px;
-}
-
+/* Gallery */
 .gallery-container {
     display: flex;
     justify-content: center;
@@ -56,10 +83,27 @@ header {
     transform: scale(1.1);
 }
 
-.video {
+/* Contact Us */
+.contact {
     padding: 20px;
+    background-color: #fff3e0;
+    margin-top: 30px;
 }
 
+.contact a {
+    text-decoration: none;
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+.contact iframe {
+    width: 80%;
+    max-width: 600px;
+    height: 400px;
+    border-radius: 10px;
+}
+
+/* Footer */
 footer {
     background-color: #6b4226;
     color: white;
