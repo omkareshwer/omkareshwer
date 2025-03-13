@@ -1,17 +1,18 @@
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: center;  /* Centering the logo */
+    justify-content: space-between;
     align-items: center;
     background: #4ca1af;
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
     text-align: center;
+    width: 100%;
 }
 
 /* Story Section */
@@ -21,7 +22,7 @@ nav {
     background: #f8f9fa;  /* Light Grey Background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
+    text-align: center;  /* Center Text */
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
@@ -33,7 +34,7 @@ nav {
 }
 
 .story p {
-    color: #222;  /* Dark Gray Text for Better Visibility */
+    color: #333;  /* Dark Gray Text for Better Visibility */
     font-size: 18px;
     line-height: 1.6;
 }
