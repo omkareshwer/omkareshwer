@@ -1,9 +1,23 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Professional Background */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Attractive Blue Gradient */
+    color: white;
+}
+
 /* Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;  /* Navbar Right Side */
     align-items: center;
-    background: #1e3c72;  /* Deep Blue Professional */
+    background: #0b3d91; /* Dark Blue */
     padding: 15px 30px;
 }
 
@@ -64,7 +78,7 @@ nav ul li a:hover {
 .story {
     margin-top: 20px;
     padding: 20px;
-    background: #fff;  /* White Background */
+    background: white;  /* White Background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -86,16 +100,68 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* Professional Background */
-body {
-    background: linear-gradient(to right, #2c3e50, #3498db);  /* Gradient Blue */
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 40px;
+}
+
+.gallery h2 {
+    font-size: 28px;
+    color: #ffcc00; /* Yellow Heading */
+}
+
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.gallery-container img {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 40px;
+}
+
+.contact h2 {
+    color: #ff9800;
+}
+
+.contact p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.contact a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 15px;
-    background: #1e3c72;
+    background: #0b3d91;
     color: white;
     margin-top: 20px;
 }
