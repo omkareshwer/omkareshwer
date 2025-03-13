@@ -1,8 +1,8 @@
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: center;  /* Centering the logo */
-    align-items: center;
+    justify-content: right;  /* Centering the logo */
+    align-items: right;
     background: #4ca1af;
     padding: 15px 30px;
 }
