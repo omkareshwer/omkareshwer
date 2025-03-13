@@ -13,25 +13,36 @@ body {
 }
 
 /* 🔹 Navigation Bar */
+/* 🔹 Navigation Bar (Professional Horizontal - Right Side) */
 nav {
-    width: 100%;
-    background: #2c3e50;  /* Dark Blue Background */
-    padding: 15px 0;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #2c3e50; /* Dark Blue Background */
+    padding: 15px 30px;
 }
 
+/* 🔹 Logo (Center Aligned) */
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+/* 🔹 Navbar Items */
 nav ul {
     list-style: none;
     padding: 0;
     margin: 0;
     display: flex;
-    justify-content: center;
 }
 
+/* 🔹 Navbar Items Side-by-Side */
 nav ul li {
-    margin: 0 20px;
+    margin-left: 20px; /* Space between menu items */
 }
 
+/* 🔹 Navbar Links */
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -46,6 +57,7 @@ nav ul li a:hover {
     background: #4ca1af;
     border-radius: 5px;
 }
+
 
 .logo {
     font-size: 28px;
