@@ -99,7 +99,7 @@ nav {
 
 /* 🔥 Horizontal Scroll for Event-wise Images */
 .event-images {
-    display: horizontal;
+    display: flex;
     overflow-x: auto;
     gap: 15px;
     padding: 10px;
