@@ -1,51 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
 /* Navigation Bar */
 nav {
-    background-color: #333;
-    padding: 10px;
-    text-align: center;
-}
-nav .logo {
+    background-color: #222;
     color: white;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav .logo {
     font-size: 24px;
     font-weight: bold;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
+
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin-left: 25px;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #f39c12;
 }
 
 /* Hero Section */
 .hero {
     text-align: center;
-    padding: 50px;
-}
-.hero img {
-    width: 60%;
-    max-height: 400px;
+    padding: 60px 20px;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: white;
 }
 
-/* Gallery */
-.gallery-container img {
-    width: 30%;
-    margin: 10px;
-    transition: 0.3s;
+.hero img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
-.gallery-container img:hover {
+
+.story {
+    margin-top: 20px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.story h2 {
+    color: #6a11cb;
+}
+
+/* Gallery Section */
+.gallery {
+    text-align: center;
+    padding: 50px;
+    background-color: white;
+}
+
+.gallery h2 {
+    font-size: 26px;
+    color: #6a11cb;
+    margin-bottom: 20px;
+}
+
+.event {
+    margin-bottom: 40px;
+}
+
+.event h3 {
+    font-size: 22px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.event img {
+    width: 320px;
+    height: auto;
+    margin: 15px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    border: 5px solid #ddd;
+}
+
+/* Hover Effect */
+.event img:hover {
     transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border-color: #f39c12;
+}
+
+/* Contact Section */
+.contact {
+    text-align: center;
+    padding: 50px;
+    background-color: #f0f0f0;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #6a11cb;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #333;
+    padding: 20px;
+    background-color: #222;
     color: white;
+    font-size: 14px;
 }
