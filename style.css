@@ -1,39 +1,69 @@
-/* Reset Styles */
-* {
+/* 🔹 Body Styling */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-}
-
-/* Body */
-body {
-    background: #f4f4f4;
-    color: #333;
-}
-
-/* Navigation Bar */
-nav {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #4ca1af;
-    padding: 15px 30px;
 }
 
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: white;
-    text-align: center;
-    flex: 1;
-}
-
-/* Hero Section */
-.hero {
+/* 🔹 Vertical Navigation Bar */
+nav {
+    width: 250px;
+    height: 100vh;
+    background: #2c3e50;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+nav ul li {
+    width: 100%;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+/* 🔥 Hover Effect on Nav */
+nav ul li a:hover {
+    background: #4ca1af;
+    color: #fff;
+}
+
+/* 🔹 Main Content */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+    width: calc(100% - 250px);
+}
+
+/* 🔹 Hero Section */
+.hero {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(to right, #4ca1af, #2c3e50);
@@ -41,24 +71,22 @@ nav {
 }
 
 .hero img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
     border-radius: 10px;
 }
 
-/* Story Section */
+/* 🔹 Story Section */
 .story {
-    margin-top: 20px;
     padding: 20px;
-    background: #ffffff;  /* White Background */
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 20px auto;
     text-align: justify;
     font-size: 18px;
-    color: #333;
+    color: #222;
     line-height: 1.8;
 }
 
@@ -70,39 +98,64 @@ nav {
     font-weight: bold;
 }
 
-.story p {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.6;
-    text-align: justify;
-}
-
-/* Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
-    padding: 20px;
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
-}
-
-.gallery img {
+/* 🔹 Gallery Section */
+.gallery-container {
     width: 100%;
-    height: auto;
+    padding: 20px;
+    background: #f4f4f4; /* Light Grey Background */
+}
+
+.event-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* 🔥 Event Title */
+.event-title {
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+/* 🔥 Horizontal Event Images */
+.event-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #4ca1af #ffffff;
+}
+
+.event-images::-webkit-scrollbar {
+    height: 8px;
+}
+
+.event-images::-webkit-scrollbar-thumb {
+    background: #4ca1af;
+    border-radius: 10px;
+}
+
+.event-images img {
+    width: 250px;
+    height: 180px;
     border-radius: 10px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* 🔥 Final Hover Effect - ज़बरदस्त Look! */
-.gallery img:hover {
+/* 🔥 Hover Effect on Images */
+.event-images img:hover {
     transform: scale(1.1);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
 }
 
-/* Contact Us Section */
+/* 🔹 Contact Us Section */
 .contact {
     text-align: center;
     padding: 20px;
@@ -116,7 +169,7 @@ nav {
     text-decoration: none;
 }
 
-/* Footer */
+/* 🔹 Footer */
 footer {
     text-align: center;
     background: #333;
