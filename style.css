@@ -13,6 +13,7 @@ body {
 }
 
 /* Navigation Bar */
+/* 🔹 Navigation Bar */
 nav {
     display: flex;
     justify-content: space-between;
@@ -29,7 +30,7 @@ nav {
     flex: 1;
 }
 
-/* Hero Section */
+/* 🔹 Hero Section */
 .hero {
     display: flex;
     flex-direction: column;
@@ -46,11 +47,11 @@ nav {
     border-radius: 10px;
 }
 
-/* Story Section */
+/* 🔹 Story Section */
 .story {
     margin-top: 20px;
     padding: 20px;
-    background: #ffffff;  /* White Background */
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 800px;
@@ -77,32 +78,59 @@ nav {
     text-align: justify;
 }
 
-/* Gallery Section */
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+/* 🔹 Gallery Section */
+.gallery-container {
+    width: 100%;
     padding: 20px;
-    justify-content: center;
-    max-width: 1200px;
-    margin: auto;
+    background: #f4f4f4; /* Light Grey Background */
 }
 
-.gallery img {
-    width: 100%;
-    height: auto;
+.event-section {
+    margin-bottom: 30px;
+}
+
+.event-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+/* 🔥 Horizontal Scroll for Event-wise Images */
+.event-images {
+    display: flex;
+    overflow-x: auto;
+    gap: 15px;
+    padding: 10px;
+    scrollbar-width: thin;
+    scrollbar-color: #4ca1af #ffffff;
+}
+
+.event-images::-webkit-scrollbar {
+    height: 8px;
+}
+
+.event-images::-webkit-scrollbar-thumb {
+    background: #4ca1af;
+    border-radius: 10px;
+}
+
+.event-images img {
+    width: 250px;
+    height: 180px;
     border-radius: 10px;
     transition: transform 0.4s ease, box-shadow 0.4s ease;
 }
 
-/* 🔥 Final Hover Effect - ज़बरदस्त Look! */
-.gallery img:hover {
+/* 🔥 Hover Effect */
+.event-images img:hover {
     transform: scale(1.1);
     box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.4);
     border-radius: 15px;
 }
 
-/* Contact Us Section */
+/* 🔹 Contact Us Section */
 .contact {
     text-align: center;
     padding: 20px;
@@ -116,7 +144,7 @@ nav {
     text-decoration: none;
 }
 
-/* Footer */
+/* 🔹 Footer */
 footer {
     text-align: center;
     background: #333;
