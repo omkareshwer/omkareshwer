@@ -55,18 +55,30 @@ nav ul li a:hover {
 }
 
 /* Hero Section (Main Image) */
+/* Hero Section */
 .hero {
     display: flex;
-    justify-content: center;  /* Center Image */
-    align-items: center;
-    text-align: center;
-    height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('mandir1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('mandir1.jpg') center/cover no-repeat;
+    color: white;
+    padding: 50px;
+    text-align: center;
+    position: relative;
 }
+
+/* Hero Image Styling */
+.hero img {
+    width: 80%; /* अब image सही width में दिखेगी */
+    max-width: 900px; /* बड़ी screen पर भी सही रहेगा */
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
+}
+
 
 .hero h2 {
     font-size: 40px;
