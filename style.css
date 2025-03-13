@@ -18,7 +18,7 @@ nav {
 .story {
     margin-top: 20px;
     padding: 20px;
-    background: #f8f9fa;  /* Light Grey Background */
+    background: #ffffff;  /* White Background for Better Readability */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -28,12 +28,14 @@ nav {
 }
 
 .story h2 {
-    color: #2c3e50;  /* Dark Blue for Title */
+    color: #d35400;  /* Dark Orange Title for Contrast */
     font-size: 24px;
+    font-weight: bold;
 }
 
 .story p {
-    color: #222;  /* Dark Gray Text for Better Visibility */
+    color: #444;  /* Darker Gray for Better Visibility */
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
 }
