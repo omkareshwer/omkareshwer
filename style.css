@@ -1,8 +1,8 @@
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: right;  /* Centering the logo */
-    align-items: right;
+    justify-content: center;  /* Centering the logo */
+    align-items: center;
     background: #4ca1af;
     padding: 15px 30px;
 }
@@ -18,7 +18,7 @@ nav {
 .story {
     margin-top: 20px;
     padding: 20px;
-    background: #ffffff;  /* White Background for Better Readability */
+    background: #f8f9fa;  /* Light Grey Background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -28,14 +28,12 @@ nav {
 }
 
 .story h2 {
-    color: #d35400;  /* Dark Orange Title for Contrast */
+    color: #2c3e50;  /* Dark Blue for Title */
     font-size: 24px;
-    font-weight: bold;
 }
 
 .story p {
-    color: #444;  /* Darker Gray for Better Visibility */
+    color: #222;  /* Dark Gray Text for Better Visibility */
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
 }
