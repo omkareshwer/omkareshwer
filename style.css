@@ -1,181 +1,119 @@
-/* Global Styles */
-* {
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Professional Background */
-body {
-    background: linear-gradient(to right, #1e3c72, #2a5298); /* Attractive Blue Gradient */
-    color: white;
+    background: #f8f9fa;
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: space-between;  /* Navbar Right Side */
+    justify-content: space-between;
     align-items: center;
-    background: #0b3d91; /* Dark Blue */
+    background: #4ca1af;
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: white;
-    flex-grow: 1;
     text-align: center;
+    flex-grow: 1;
 }
 
-/* Navbar Links */
 nav ul {
     list-style: none;
-    margin: 0;
-    padding: 0;
     display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
 }
 
 nav ul li {
-    margin: 0 15px;
+    display: inline;
 }
 
 nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    padding: 8px 12px;
-    transition: 0.3s ease;
+    font-weight: bold;
+    padding: 10px;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background: #ff9800;  /* Orange Hover Effect */
-    border-radius: 5px;
+    color: #222;
 }
 
-
-
-/* Hero Image Styling */
 /* Hero Section */
 .hero {
     display: flex;
-    flex-direction: column;
-    align-items: center;
     justify-content: center;
-    height: 80vh;
-    background: #f5f5f5; /* हल्का ग्रे बैकग्राउंड */
-    padding: 50px;
-    text-align: center;
+    align-items: center;
+    height: 70vh;
+    background: #e0f7fa;
+    padding: 20px;
 }
 
-/* Hero Image Proper Center और सही Size */
 .hero img {
-    width: 70%; /* 70% width होगी */
-    max-width: 800px; /* ज़्यादा बड़ी स्क्रीन पर भी ठीक रहेगा */
+    width: 60%; /* Adjusted width for perfect size */
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
-    margin-bottom: 20px;
 }
-
-/* Hero Text */
-.hero h2 {
-    font-size: 28px;
-    color: #333; /* Dark Gray */
-    margin-top: 10px;
-}
-
 
 /* Story Section */
 .story {
-    margin-top: 20px;
-    padding: 20px;
-    background: white;  /* White Background */
+    padding: 30px;
+    background: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 900px;
+    margin: 20px auto;
 }
 
 .story h2 {
-    color: #e74c3c;  /* Red Title for Contrast */
+    color: #2c3e50;
     font-size: 26px;
-    font-weight: bold;
 }
 
 .story p {
-    color: #222;  /* Dark Text */
+    color: #333;
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
 }
 
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    padding: 40px;
-}
-
-.gallery h2 {
-    font-size: 28px;
-    color: #ffcc00; /* Yellow Heading */
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.gallery-container img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.gallery-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Section */
+/* Contact Us Section */
 .contact {
+    padding: 30px;
+    background: #4ca1af;
+    color: white;
     text-align: center;
-    padding: 40px;
-}
-
-.contact h2 {
-    color: #ff9800;
-}
-
-.contact p {
-    font-size: 18px;
-    margin-top: 10px;
 }
 
 .contact a {
-    color: #ffcc00;
+    color: yellow;
     text-decoration: none;
     font-weight: bold;
 }
 
-.contact a:hover {
-    text-decoration: underline;
+.contact iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 300px;
+    margin-top: 10px;
 }
 
 /* Footer */
 footer {
+    background: #222;
+    color: white;
     text-align: center;
     padding: 15px;
-    background: #0b3d91;
-    color: white;
-    margin-top: 20px;
+    font-size: 16px;
 }
-
