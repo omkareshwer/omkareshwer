@@ -55,18 +55,21 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section (Main Image) */
+/* Hero Section (Main Image with Reduced Width) */
 .hero {
     display: flex;
     justify-content: center;  
     align-items: center;
     flex-direction: column;
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('mandir1.jpg');
-    background-size: cover;
-    background-position: center;
-    color: white;
     text-align: center;
+}
+
+.hero img {
+    width: 60%; /* Reduced Image Width */
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
 
 .hero h2 {
@@ -97,6 +100,39 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
+}
+
+/* Contact Us Section */
+.contact {
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+.contact h2 {
+    color: #0b3d91;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
