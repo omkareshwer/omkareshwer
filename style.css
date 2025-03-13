@@ -46,13 +46,15 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 40px;
+    gap: 20px;
 }
 
 .hero img {
     width: 40%;
     height: auto;
     border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
 }
 
 .story {
@@ -60,7 +62,21 @@ nav ul li a {
     padding: 20px;
     text-align: left;
     font-size: 18px;
+    line-height: 1.6;
+    background: #fff3e0;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.story h2 {
+    color: #6b4226;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.story p {
     color: #333;
+    margin-bottom: 10px;
 }
 
 
