@@ -1,9 +1,15 @@
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* Reset Styles */
+* {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Light Blue Gradient */
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+    background: #f4f4f4;
+    color: #333;
 }
 
 /* Navigation Bar */
@@ -11,28 +17,26 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #1a237e;
+    background: #4ca1af;
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 26px;
     font-weight: bold;
     color: white;
     text-align: center;
     flex-grow: 1;
+    text-align: center;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
-    padding: 0;
-    margin: 0;
 }
 
 nav ul li {
-    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -40,93 +44,71 @@ nav ul li a {
     color: white;
     font-size: 18px;
     font-weight: bold;
-    padding: 10px;
-    transition: 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ffcc00;
 }
 
 /* Hero Section */
 .hero {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 70vh;
-    background: linear-gradient(to bottom, #2196f3, #0d47a1); /* Deep Blue Gradient */
-    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
 }
 
 .hero img {
-    width: 45%;
-    max-width: 600px;
+    width: 80%;
+    max-width: 800px;
     height: auto;
     border-radius: 10px;
 }
 
 /* Story Section */
 .story {
-    padding: 30px;
+    margin-top: 20px;
+    padding: 20px;
     background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
-    max-width: 900px;
-    margin: 20px auto;
+    max-width: 800px;
 }
 
 .story h2 {
-    color: #1a237e;
-    font-size: 26px;
-}
-
-.story p {
-    color: #333;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-/* Contact Us Section */
-.contact {
-    padding: 30px;
-    background: #283593; /* Dark Blue */
-    color: white;
-    text-align: center;
-    margin-top: 30px;
-    border-radius: 10px;
-}
-
-.contact h2 {
+    color: #2c3e50;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
+.story p {
+    color: #222;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Contact Section */
+.contact {
+    margin-top: 50px;
+    text-align: center;
+    padding: 20px;
+    background: #e3f2fd;
+}
+
+.contact h2 {
+    font-size: 24px;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
 .contact p {
     font-size: 18px;
-    margin: 5px 0;
-}
-
-.contact a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact iframe {
-    width: 100%;
-    max-width: 600px;
-    height: 300px;
-    margin-top: 10px;
-    border-radius: 5px;
+    color: #222;
 }
 
 /* Footer */
 footer {
-    background: #222;
-    color: white;
     text-align: center;
-    padding: 15px;
-    font-size: 16px;
+    padding: 10px;
+    background: #333;
+    color: white;
     margin-top: 30px;
 }
