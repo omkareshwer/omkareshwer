@@ -61,6 +61,7 @@ nav ul li a:hover {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Story Section */
 .story {
     margin-top: 20px;
     padding: 20px;
@@ -76,6 +77,13 @@ nav ul li a:hover {
 .story h2 {
     color: #4ca1af;
 }
+
+.story p {
+    color: black;  /* Now the text is black */
+    font-size: 18px;
+    line-height: 1.6;
+}
+
 
 /* Gallery Section */
 .gallery {
