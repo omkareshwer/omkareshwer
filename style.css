@@ -3,7 +3,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, #f0f4f8, #d9e2ec); /* Light Blue Gradient */
+    background: linear-gradient(to right, #e3f2fd, #bbdefb); /* Light Blue Gradient */
 }
 
 /* Navigation Bar */
@@ -11,12 +11,12 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #2c3e50;
+    background: #1a237e;
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
     color: white;
     text-align: center;
@@ -53,23 +53,22 @@ nav ul li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 60vh;
-    background: #e0f7fa;
+    height: 70vh;
+    background: linear-gradient(to bottom, #2196f3, #0d47a1); /* Deep Blue Gradient */
     padding: 20px;
 }
 
 .hero img {
-    width: 50%;
-    max-width: 700px;
+    width: 45%;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Story Section */
 .story {
     padding: 30px;
-    background: #ffffff;
+    background: white;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
@@ -78,12 +77,12 @@ nav ul li a:hover {
 }
 
 .story h2 {
-    color: #2c3e50;
+    color: #1a237e;
     font-size: 26px;
 }
 
 .story p {
-    color: #444;
+    color: #333;
     font-size: 18px;
     line-height: 1.6;
 }
@@ -91,12 +90,11 @@ nav ul li a:hover {
 /* Contact Us Section */
 .contact {
     padding: 30px;
-    background: #34495e; /* Dark Blue Background */
+    background: #283593; /* Dark Blue */
     color: white;
     text-align: center;
     margin-top: 30px;
     border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .contact h2 {
