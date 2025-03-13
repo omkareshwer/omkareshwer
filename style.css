@@ -1,9 +1,15 @@
-/* General Styling */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
+/* Global Styles */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Professional Background */
+body {
+    background: linear-gradient(to right, #1e3c72, #2a5298); /* Attractive Blue Gradient */
+    color: white;
     text-align: center;
 }
 
@@ -12,23 +18,24 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #333;
+    background: #0b3d91; /* Dark Blue */
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
     color: white;
-    text-align: center;
     flex-grow: 1;
+    text-align: center;
 }
 
+/* Navbar Links */
 nav ul {
     list-style: none;
-    display: flex;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 nav ul li {
@@ -40,62 +47,102 @@ nav ul li a {
     color: white;
     font-size: 18px;
     padding: 8px 12px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 nav ul li a:hover {
-    background: #4ca1af;
+    background: #ff9800;  /* Orange Hover Effect */
     border-radius: 5px;
 }
 
-/* Hero Section */
+/* Hero Section (Properly Centered Image & Text) */
 .hero {
     display: flex;
+    justify-content: center;  
+    align-items: center;
     flex-direction: column;
-    align-items: right;
-    justify-content: right;
     height: 80vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('mandir1.jpg') center/cover no-repeat;
-    color: white;
-    padding: 50px;
     text-align: center;
 }
 
 .hero img {
-    width: 60%;
-    max-width: 600px;
+    width: 50%; /* Adjusted Image Width */
+    max-width: 500px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
-/* Story Section */
+.hero h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* Story Section - Properly Centered */
 .story {
-    max-width: 800px;
-    background: white;
+    margin: 20px auto;
     padding: 20px;
+    background: white;  /* White Background */
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 800px;
     text-align: center;
 }
 
 .story h2 {
-    color: #333;
+    color: #e74c3c;  /* Red Title */
     font-size: 26px;
+    font-weight: bold;
 }
 
 .story p {
-    color: #222;
+    color: #222;  /* Dark Text */
     font-size: 18px;
     line-height: 1.6;
+    text-align: justify;
+}
+
+/* Contact Us Section - Clear & Proper Alignment */
+.contact {
+    margin: 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    text-align: center;
+    color: #333;
+}
+
+.contact h2 {
+    color: #0b3d91;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contact p {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #222;
+}
+
+.contact a {
+    text-decoration: none;
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    background: #333;
-    color: white;
-    padding: 10px;
     text-align: center;
+    padding: 15px;
+    background: #0b3d91;
+    color: white;
+    margin-top: 20px;
 }
-
