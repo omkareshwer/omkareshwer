@@ -1,154 +1,39 @@
-/* General Styles */
-body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f8f9fa;
-    color: #333;
-}
-
 /* Navigation Bar */
 nav {
-    background-color: #222;
-    color: white;
-    padding: 15px 30px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;  /* Centering the logo */
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: #4ca1af;
+    padding: 15px 30px;
 }
 
-nav .logo {
+.logo {
     font-size: 26px;
     font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    margin-left: auto;
-}
-
-nav ul li {
-    margin-left: 25px;
-}
-
-nav ul li a {
     color: white;
-    text-decoration: none;
-    font-size: 18px;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #f39c12;
-}
-
-/* Hero Section */
-.hero {
     text-align: center;
-    padding: 80px 20px;
-    background: linear-gradient(to right, #2c3e50, #4ca1af);
-    color: white;
 }
 
-.hero img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
+/* Story Section */
 .story {
     margin-top: 20px;
     padding: 20px;
-    background: white;
+    background: #f8f9fa;  /* Light Grey Background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: left;
+    text-align: center;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
 }
 
 .story h2 {
-    color: #4ca1af;
-}
-
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    padding: 50px;
-    background-color: white;
-}
-
-.gallery h2 {
-    font-size: 26px;
-    color: #2c3e50;
-    margin-bottom: 20px;
-}
-
-.event {
-    margin-bottom: 40px;
-}
-
-.event h3 {
-    font-size: 22px;
-    color: #333;
-    margin-bottom: 15px;
-}
-
-.event img {
-    width: 320px;
-    height: auto;
-    margin: 15px;
-    border-radius: 10px;
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
-    border: 5px solid #ddd;
-}
-
-/* Hover Effect */
-.event img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    border-color: #f39c12;
-}
-
-/* Contact Section */
-.contact {
-    text-align: center;
-    padding: 50px;
-    background-color: #f0f0f0;
-}
-
-.contact h2 {
+    color: #2c3e50;  /* Dark Blue for Title */
     font-size: 24px;
-    color: #2c3e50;
 }
 
-.contact p {
+.story p {
+    color: #222;  /* Dark Gray Text for Better Visibility */
     font-size: 18px;
-    margin-bottom: 10px;
-}
-
-.contact a {
-    color: #4ca1af;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    color: #f39c12;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    padding: 20px;
-    background-color: #222;
-    color: white;
-    font-size: 14px;
+    line-height: 1.6;
 }
