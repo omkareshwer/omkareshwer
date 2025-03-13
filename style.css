@@ -1,15 +1,9 @@
-/* Global Styles */
-* {
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Arial', sans-serif;
-}
-
-/* Professional Background */
-body {
-    background: linear-gradient(to right, #1e3c72, #2a5298); /* Attractive Blue Gradient */
-    color: white;
     text-align: center;
 }
 
@@ -18,24 +12,23 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: #0b3d91; /* Dark Blue */
+    background: #333;
     padding: 15px 30px;
 }
 
 .logo {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: bold;
     color: white;
-    flex-grow: 1;
     text-align: center;
+    flex-grow: 1;
 }
 
-/* Navbar Links */
 nav ul {
     list-style: none;
+    display: flex;
     margin: 0;
     padding: 0;
-    display: flex;
 }
 
 nav ul li {
@@ -47,102 +40,62 @@ nav ul li a {
     color: white;
     font-size: 18px;
     padding: 8px 12px;
-    transition: 0.3s ease;
+    transition: 0.3s;
 }
 
 nav ul li a:hover {
-    background: #ff9800;  /* Orange Hover Effect */
+    background: #4ca1af;
     border-radius: 5px;
 }
 
-/* Hero Section (Properly Centered Image & Text) */
+/* Hero Section */
 .hero {
     display: flex;
-    justify-content: center;  
-    align-items: center;
     flex-direction: column;
-    height:54vh;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('mandir1.jpg') center/cover no-repeat;
+    color: white;
+    padding: 50px;
     text-align: center;
 }
 
 .hero img {
-    width: 80%;  /* पहले 50% था, अब 80% कर दिया */
-    max-width: 700px; /* Max Size बढ़ा दी */
+    width: 60%;
+    max-width: 600px;
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     margin-bottom: 20px;
 }
 
-.hero h2 {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-/* Story Section - Properly Centered */
+/* Story Section */
 .story {
-    margin: 20px auto;
-    padding: 20px;
-    background: white;  /* White Background */
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     max-width: 800px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: center;
 }
 
 .story h2 {
-    color: #e74c3c;  /* Red Title */
+    color: #333;
     font-size: 26px;
-    font-weight: bold;
 }
 
 .story p {
-    color: #222;  /* Dark Text */
+    color: #222;
     font-size: 18px;
     line-height: 1.6;
-    text-align: justify;
-}
-
-/* Contact Us Section - Clear & Proper Alignment */
-.contact {
-    margin: 40px auto;
-    padding: 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    max-width: 600px;
-    text-align: center;
-    color: #333;
-}
-
-.contact h2 {
-    color: #0b3d91;
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
-
-.contact p {
-    font-size: 18px;
-    margin: 10px 0;
-    color: #222;
-}
-
-.contact a {
-    text-decoration: none;
-    color: #e74c3c;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 15px;
-    background: #0b3d91;
+    background: #333;
     color: white;
-    margin-top: 20px;
+    padding: 10px;
+    text-align: center;
 }
+
