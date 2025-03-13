@@ -55,27 +55,28 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 
-/* Hero Section (Main Image with Reduced Width) */
+/* Hero Section (Properly Centered Image & Text) */
 .hero {
     display: flex;
-    justify-content: right;  
+    justify-content: center;  
     align-items: center;
     flex-direction: column;
-    height: 45vh;
+    height: 80vh;
     text-align: center;
 }
 
 .hero img {
-    width: 60%; /* Reduced Image Width */
-    max-width: 60px;
+    width: 50%; /* Adjusted Image Width */
+    max-width: 500px;
+    height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    margin-bottom: 20px;
 }
 
 .hero h2 {
     font-size: 40px;
     font-weight: bold;
-    margin-top: 20px;
 }
 
 /* Story Section - Properly Centered */
@@ -102,7 +103,7 @@ nav ul li a:hover {
     text-align: justify;
 }
 
-/* Contact Us Section */
+/* Contact Us Section - Clear & Proper Alignment */
 .contact {
     margin: 40px auto;
     padding: 20px;
@@ -118,11 +119,13 @@ nav ul li a:hover {
     color: #0b3d91;
     font-size: 24px;
     font-weight: bold;
+    margin-bottom: 10px;
 }
 
 .contact p {
     font-size: 18px;
     margin: 10px 0;
+    color: #222;
 }
 
 .contact a {
