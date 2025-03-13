@@ -66,8 +66,8 @@ nav ul li a:hover {
 }
 
 .hero img {
-    width: 50%; /* Adjusted Image Width */
-    max-width: 500px;
+    width: 80%;  /* पहले 50% था, अब 80% कर दिया */
+    max-width: 700px; /* Max Size बढ़ा दी */
     height: auto;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
