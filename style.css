@@ -10,12 +10,13 @@
 body {
     background: linear-gradient(to right, #1e3c72, #2a5298); /* Attractive Blue Gradient */
     color: white;
+    text-align: center;
 }
 
 /* Navigation Bar */
 nav {
     display: flex;
-    justify-content: space-between;  /* Navbar Right Side */
+    justify-content: space-between;
     align-items: center;
     background: #0b3d91; /* Dark Blue */
     padding: 15px 30px;
@@ -57,15 +58,15 @@ nav ul li a:hover {
 /* Hero Section (Main Image) */
 .hero {
     display: flex;
-    justify-content: center;  /* Center Image */
+    justify-content: center;  
     align-items: center;
-    text-align: center;
+    flex-direction: column;
     height: 80vh;
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('mandir1.jpg');
     background-size: cover;
     background-position: center;
     color: white;
-    flex-direction: column;
+    text-align: center;
 }
 
 .hero h2 {
@@ -74,21 +75,19 @@ nav ul li a:hover {
     margin-top: 20px;
 }
 
-/* Story Section */
+/* Story Section - Properly Centered */
 .story {
-    margin-top: 20px;
+    margin: 20px auto;
     padding: 20px;
     background: white;  /* White Background */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
     max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
 
 .story h2 {
-    color: #e74c3c;  /* Red Title for Contrast */
+    color: #e74c3c;  /* Red Title */
     font-size: 26px;
     font-weight: bold;
 }
@@ -98,63 +97,6 @@ nav ul li a:hover {
     font-size: 18px;
     line-height: 1.6;
     text-align: justify;
-}
-
-/* Gallery Section */
-.gallery {
-    text-align: center;
-    padding: 40px;
-}
-
-.gallery h2 {
-    font-size: 28px;
-    color: #ffcc00; /* Yellow Heading */
-}
-
-.gallery-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
-}
-
-.gallery-container img {
-    width: 300px;
-    height: 200px;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    cursor: pointer;
-}
-
-.gallery-container img:hover {
-    transform: scale(1.1);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
-
-/* Contact Section */
-.contact {
-    text-align: center;
-    padding: 40px;
-}
-
-.contact h2 {
-    color: #ff9800;
-}
-
-.contact p {
-    font-size: 18px;
-    margin-top: 10px;
-}
-
-.contact a {
-    color: #ffcc00;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.contact a:hover {
-    text-decoration: underline;
 }
 
 /* Footer */
