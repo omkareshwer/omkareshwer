@@ -58,7 +58,7 @@ nav ul li a:hover {
 /* Hero Section (Main Image with Reduced Width) */
 .hero {
     display: flex;
-    justify-content: center;  
+    justify-content: right;  
     align-items: center;
     flex-direction: column;
     height: 45vh;
@@ -66,8 +66,8 @@ nav ul li a:hover {
 }
 
 .hero img {
-    width: 45%; /* Reduced Image Width */
-    max-width: 45px;
+    width: 60%; /* Reduced Image Width */
+    max-width: 60px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
