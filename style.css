@@ -150,6 +150,32 @@ nav ul li a:hover {
     border-radius: 15px;
 }
 
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.event {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.05);
+}
+
+.event img, .event video {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 10px;
+}
+
 
 
 /* 📌 Contact Us Section */
