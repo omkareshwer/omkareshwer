@@ -57,9 +57,7 @@ nav ul li a:hover {
     background: #4ca1af;
     border-radius: 5px;
 }
-nav ul li:first-child {
-    margin-right: auto; /* Left Side Shift */
-}
+
 
 
 
