@@ -212,6 +212,52 @@ nav ul li a:hover {
     max-width: 500px;
     border-radius: 10px;
 }
+.katha {
+    text-align: center;
+    background: #fdf6e3;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 900px;
+    margin: auto;
+}
+
+.katha h2 {
+    color: #8e44ad;
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+
+.katha p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.katha-img {
+    width: 80%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background: #8e44ad;
+    color: white;
+}
 
 
 
