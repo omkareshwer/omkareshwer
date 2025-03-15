@@ -124,6 +124,13 @@ nav ul li a:hover {
     line-height: 1.6;
     text-align: justify;
 }
+.story-img {
+    width: 90%;
+    max-width: 500px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
 .donation {
     text-align: center;
     padding: 20px;
