@@ -310,6 +310,54 @@ th {
         height: 300px; /* Small Screen पर Map का Size Adjust */
     }
 }
+/* Instagram Section */
+.instagram {
+    background-color: #f8f9fa;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 2px solid #ddd;
+}
+
+.instagram h2 {
+    font-size: 26px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+}
+
+.insta-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.insta-qr {
+    max-width: 200px;
+    height: auto;
+    border: 4px solid #e1306c;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+
+.insta-qr:hover {
+    transform: scale(1.05);
+}
+
+.insta-button {
+    text-decoration: none;
+    background: linear-gradient(to right, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+    color: white;
+    padding: 10px 25px;
+    font-size: 18px;
+    border-radius: 25px;
+    transition: background 0.3s ease;
+}
+
+.insta-button:hover {
+    background: #e1306c;
+}
+
 
 
 /* Footer */
